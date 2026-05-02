@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -16,26 +17,26 @@ const Footer = () => {
                             entrepreneurship experience
                         </p>
                         <div className='flex gap-[10px]'>
-                            <a href="#" className='w-[32px] h-[32px] bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors'>
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className='w-[32px] h-[32px] bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors'>
                                 <img src="/assets/images/facebook.png" alt="Facebook" className='w-[28px] h-[28px]' />
                             </a>
-                            <a href="#" className='w-[32px] h-[32px] bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors'>
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className='w-[32px] h-[32px] bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors'>
                                 <img src="/assets/images/linkedin.png" alt="LinkedIn" className='w-[28px] h-[28px]' />
                             </a>
-                            <a href="#" className='w-[32px] h-[32px] bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors'>
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className='w-[32px] h-[32px] bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors'>
                                 <img src="/assets/images/instagram.png" alt="Instagram" className='w-[28px] h-[28px]' />
                             </a>
                         </div>
                     </div>
 
                     {/* Quick Links */}
-                    <div className='flex flex-col gap-[24px] w-[135px]'>
+                    <div className='flex flex-col gap-[24px] w-[137px]'>
                         <h3 className='text-[24px] font-[600]'>Quick Links</h3>
                         <ul className='flex flex-col gap-[16px]'>
-                            <li><a href="#" className='text-[16px] text-[#fff]/90'>About Us</a></li>
-                            <li><a href="#" className='text-[16px] text-[#fff]/90'>Donate</a></li>
-                            <li><a href="#" className='text-[16px] text-[#fff]/90'>Store</a></li>
-                            <li><a href="#" className='text-[16px] text-[#fff]/90'>Progress</a></li>
+                            <li><Link to="/about" className='text-[16px] text-[#fff]/90'>About Us</Link></li>
+                            <li><Link to="/donate" className='text-[16px] text-[#fff]/90'>Donate</Link></li>
+                            <li><Link to="/store" className='text-[16px] text-[#fff]/90'>Store</Link></li>
+                            <li><Link to="/progress" className='text-[16px] text-[#fff]/90'>Progress</Link></li>
                         </ul>
                     </div>
 
@@ -43,10 +44,10 @@ const Footer = () => {
                     <div className='flex flex-col gap-[24px] w-[135px]'>
                         <h3 className='text-[24px] font-[600]'>Resources</h3>
                         <ul className='flex flex-col gap-[16px]'>
-                            <li><a href="#" className='text-[16px] text-[#fff]/90'>Accessibility</a></li>
-                            <li><a href="#" className='text-[16px] text-[#fff]/90'>Board of Trustees</a></li>
-                            <li><a href="#" className='text-[16px] text-[#fff]/90'>Terms of Use</a></li>
-                            <li><a href="#" className='text-[16px] text-[#fff]/90'>Privacy & Policy</a></li>
+                            <li><Link to="/accessibility" className='text-[16px] text-[#fff]/90'>Accessibility</Link></li>
+                            <li><Link to="/board-of-trustees" className='text-[16px] text-[#fff]/90'>Board of Trustees</Link></li>
+                            <li><Link to="/terms-of-use" className='text-[16px] text-[#fff]/90'>Terms of Use</Link></li>
+                            <li><Link to="/privacy-policy" className='text-[16px] text-[#fff]/90'>Privacy & Policy</Link></li>
                         </ul>
                     </div>
 
@@ -75,8 +76,8 @@ const Footer = () => {
             <div className='border-t border-[#E5E7EC] pt-[32px] text-center w-full min-h-[62px]'>
                 <p className='text-[16px] text-white'>
                     © 2025 Seekheed UniverCity. All rights reserved. |
-                    <a href="#" className='hover:text-white mx-[4px]'>Privacy Policy</a> |
-                    <a href="#" className='hover:text-white mx-[4px]'>Terms of Service</a>
+                    <Link to="/privacy-policy" className='hover:text-white mx-[4px]'>Privacy Policy</Link> |
+                    <Link to="/terms-of-service" className='hover:text-white mx-[4px]'>Terms of Service</Link>
                 </p>
             </div>
         </div>
