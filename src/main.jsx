@@ -6,12 +6,22 @@ import App from './App.jsx'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 
+const RootLayout = () => {
+  return (
+    <div className='flex min-h-screen flex-col'>
+      <Header />
+      <div className='flex min-h-0 flex-1 flex-col'>
+        <App />
+      </div>
+      <Footer />
+    </div>
+  )
+}
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <Header />
-      <App />
-      <Footer />
+      <RootLayout />
     </BrowserRouter>
   </StrictMode>,
 )

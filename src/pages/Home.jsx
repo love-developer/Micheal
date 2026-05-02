@@ -5,7 +5,7 @@ import { enrollmentPaths } from '../data/enrollmentPaths'
 
 const Home = () => {
     return (
-        <div className='w-full bg-white'>
+        <div className='flex w-full flex-1 flex-col bg-white'>
             <div className='px-[24px] py-[80px]'>
                 {/* Main Content */}
                 <div className='w-full max-w-[1317px] mx-auto flex flex-col  gap-[50px]'>
