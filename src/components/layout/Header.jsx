@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <div className='w-full'>
-            <div className='w-full max-w-[1336px] mx-auto min-h-[90px] flex items-center p-2'>
+            <div className='w-full max-w-[1336px] mx-auto min-h-[90px] flex items-center p-2 px-6'>
                 <div className='w-full max-w-[711px] min-h-[58px] flex gap-[16px] flex items-center '>
                     <div className='w-[61px] h-[56px]'>
                         <img src="/assets/images/logo.png" className='w-full h-full object-conver' alt="" />
