@@ -56,9 +56,9 @@ const TeacherRegistration = () => {
   }
 
   return (
-    <div className='flex min-h-0 flex-1 flex-col bg-[#F0F2F5]'>
-      <div className='mx-auto flex w-full max-w-[1600px] flex-1 flex-col gap-6 px-4 py-6 md:flex-row md:gap-8 md:px-8 md:py-8'>
-        <aside className='w-full shrink-0 md:w-[308px]'>
+    <div className='flex min-h-0 flex-1 flex-col'>
+      <div className='mx-auto flex w-full max-w-[1600px] flex-1 flex-col gap-[34px] px-4 py-6 md:flex-row md:gap-8 md:px-8 md:py-8'>
+        <aside className='w-full shrink-0 md:w-[288px]'>
           <div className='rounded-xl border border-[#E8EAED] bg-white p-5 shadow-[0_2px_16px_rgba(0,0,0,0.06)]'>
             <Link
               to='/'

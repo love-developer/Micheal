@@ -30,16 +30,6 @@ const Header = () => {
             <p className='mt-0.5 text-[13px] text-[#7C8091] md:text-[14px]'>University Enrollment Path</p>
           </div>
         </Link>
-        <button
-          type='button'
-          className='flex shrink-0 items-center gap-2 rounded-full border border-[#E0E0E0] bg-white py-1 pl-1 pr-2 shadow-sm transition-colors hover:bg-[#FAFAFA]'
-          aria-label='Account menu'
-        >
-          <span className='flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#FFE0B2] to-[#FFCC80] text-[12px] font-bold text-[#E65100]'>
-            SJ
-          </span>
-          <ChevronDown />
-        </button>
       </div>
       <div className='h-[3px] w-full bg-[#FF9800]' aria-hidden />
     </header>
