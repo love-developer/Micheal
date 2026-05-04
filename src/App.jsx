@@ -9,6 +9,7 @@ import TeacherEnrollmentSubmitted from './pages/TeacherEnrollmentSubmitted'
 import AdminRegistration from './pages/AdminRegistration'
 import AdminEnrollmentSubmitted from './pages/AdminEnrollmentSubmitted'
 import EnrollmentComingSoon from './pages/EnrollmentComingSoon'
+import BookMaker from './pages/BookMaker'
 
 /** Wraps all pages so flex-1 fills space between global Header and Footer. */
 const MainLayout = () => (
@@ -23,6 +24,7 @@ const App = () => {
       <Routes>
         <Route element={<MainLayout />}>
         <Route path='/' element={<Home />} />
+        <Route path='/book-maker' element={<BookMaker />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/enrollment-submitted' element={<EnrollmentSubmitted />} />
         <Route path='/teacher-application-submitted' element={<TeacherEnrollmentSubmitted />} />
