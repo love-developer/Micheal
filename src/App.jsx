@@ -1,4 +1,3 @@
-import React from 'react'
 import { Routes, Route, Navigate, Outlet } from 'react-router-dom'
 import Home from './pages/Home'
 import StudentRegistration from './pages/StudentRegistration'
@@ -10,6 +9,7 @@ import AdminRegistration from './pages/AdminRegistration'
 import AdminEnrollmentSubmitted from './pages/AdminEnrollmentSubmitted'
 import EnrollmentComingSoon from './pages/EnrollmentComingSoon'
 import BookMaker from './pages/BookMaker'
+import MusicLibraryPage from './pages/music-library/MusicLibraryPage'
 
 /** Wraps all pages so flex-1 fills space between global Header and Footer. */
 const MainLayout = () => (
@@ -25,6 +25,7 @@ const App = () => {
         <Route element={<MainLayout />}>
         <Route path='/' element={<Home />} />
         <Route path='/book-maker' element={<BookMaker />} />
+        <Route path='/music-library' element={<MusicLibraryPage />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/enrollment-submitted' element={<EnrollmentSubmitted />} />
         <Route path='/teacher-application-submitted' element={<TeacherEnrollmentSubmitted />} />
